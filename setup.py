@@ -68,7 +68,7 @@ if COMPILED_BACKEND.upper() == 'C':
     SETUP_KWARGS['ext_package'] = 'nitorch'
     SETUP_KWARGS['ext_modules'] = prepare_extensions()
     CMDCLASS.update({'build_ext': build_ext})
-    INSTALL_REQUIRES += [f'torch=={torch_version}']
+    # INSTALL_REQUIRES += [f'torch=={torch_version}']
 
 if COMPILED_BACKEND.upper() == 'MONAI':
     INSTALL_REQUIRES += ['monai>=0.5']
